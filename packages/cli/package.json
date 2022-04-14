@@ -1,5 +1,5 @@
 {
-  "name": "@hmip/client",
+  "name": "@hmip/cli",
   "version": "0.0.1",
   "type": "module"
 }

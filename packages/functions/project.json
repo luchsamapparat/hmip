@@ -13,7 +13,7 @@
     "serve": {
       "executor": "@nrwl/workspace:run-commands",
       "options": {
-        "commands": ["azurite", "func start"],
+        "commands": ["azurite --location ../../.azurite", "func start"],
         "parallel": true,
         "color": true,
         "cwd": "./packages/functions"

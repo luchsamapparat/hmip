@@ -41,3 +41,7 @@ Thumbs.db
 # Azure Functions artifacts
 appsettings.json
 local.settings.json
+.azurite
+__blobstorage__
+__queuestorage__
+__azurite_db*__.json

@@ -3,7 +3,10 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "start": "node dist/packages/cli/main.js"
+    "start": "node dist/packages/cli/main.js",
+    "build:cli": "nx run cli:build",
+    "build:functions": "nx run functions:build",
+    "start:functions": "nx run functions:serve"
   },
   "private": true,
   "dependencies": {
@@ -12,6 +15,7 @@
     "uuid": "8.3.2"
   },
   "devDependencies": {
+    "@azure/functions": "^2.0.0",
     "@nrwl/cli": "13.10.1",
     "@nrwl/eslint-plugin-nx": "13.10.1",
     "@nrwl/jest": "13.10.1",
@@ -24,6 +28,7 @@
     "@types/uuid": "8.3.4",
     "@typescript-eslint/eslint-plugin": "~5.18.0",
     "@typescript-eslint/parser": "~5.18.0",
+    "azurite": "3.16.0",
     "eslint": "~8.12.0",
     "eslint-config-prettier": "8.1.0",
     "eslint-import-resolver-typescript": "2.7.1",

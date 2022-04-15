@@ -2,6 +2,7 @@
   "version": 2,
   "projects": {
     "cli": "packages/cli",
-    "client": "packages/client"
+    "client": "packages/client",
+    "functions": "packages/functions"
   }
 }

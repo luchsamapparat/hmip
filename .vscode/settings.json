@@ -23,5 +23,11 @@
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "jest.jestCommandLine": "node ./node_modules/jest/bin/jest"
+  "jest.jestCommandLine": "node ./node_modules/jest/bin/jest",
+  "azureFunctions.deploySubpath": "./packages/functions",
+  "azureFunctions.postDeployTask": "npm install (functions)",
+  "azureFunctions.projectLanguage": "TypeScript",
+  "azureFunctions.projectRuntime": "~4",
+  "debug.internalConsoleOptions": "neverOpen",
+  "azureFunctions.preDeployTask": "npm prune (functions)"
 }

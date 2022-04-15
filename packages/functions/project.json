@@ -1,0 +1,31 @@
+{
+  "root": "packages/functions",
+  "sourceRoot": "packages/functions/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/workspace:run-commands",
+      "options": {
+        "commands": ["tsc"],
+        "cwd": "./packages/functions"
+      }
+    },
+    "serve": {
+      "executor": "@nrwl/workspace:run-commands",
+      "options": {
+        "commands": ["azurite", "func start"],
+        "parallel": true,
+        "color": true,
+        "cwd": "./packages/functions"
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["packages/functions/**/*.ts"]
+      }
+    }
+  },
+  "tags": []
+}

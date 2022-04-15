@@ -1,13 +1,13 @@
 import { AzureFunction, Context } from "@azure/functions";
 import { Authentication, getCurrentState, getHost } from '@hmip/client';
+import 'dotenv/config';
 
-
-const accessPointSgtin = '';
-const pin = '';
-const deviceName = '';
-const deviceId = '';
-const authToken = '';
-const clientId = '';
+const accessPointSgtin = process.env.ACCESS_POINT_SGTIN as string;
+const pin = process.env.PIN as string;
+const deviceName = process.env.DEVICE_NAME as string;
+const deviceId = process.env.DEVICE_ID as string;
+const authToken = process.env.AUTH_TOKEN as string;
+const clientId = process.env.CLIENT_ID as string;
 
 const timerTrigger: AzureFunction = async function (context: Context, myTimer: any): Promise<void> {
   var timeStamp = new Date().toISOString();

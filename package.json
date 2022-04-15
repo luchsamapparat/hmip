@@ -12,6 +12,7 @@
   "dependencies": {
     "@hmip/client": "file:dist/packages/client",
     "cross-fetch": "3.1.5",
+    "dotenv": "16.0.0",
     "tslib": "^2.0.0",
     "uuid": "8.3.2"
   },
